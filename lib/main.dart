@@ -1,10 +1,15 @@
-import 'package:ecommerce_app/core/routes_manager/routes.dart';
+
+import 'package:ecommerce_app/presentation/core/routes_manager/route_generator.dart';
+import 'package:ecommerce_app/presentation/core/routes_manager/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'core/routes_manager/route_generator.dart';
+import 'di.dart';
+
+
 
 void main() {
+  configureDependencies();
   runApp(const MainApp());
 }
 
